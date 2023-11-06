@@ -5,12 +5,14 @@ pipeline{
             steps{
                 echo "Init"
                 echo "*****************************"
+                echo "Init Completed."
             }
         }
         stage("Build"){
             step{
                 echo "Build"
                 echo "*****************************"
+                echo "Build Completed"
             }
         }
     }
