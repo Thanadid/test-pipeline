@@ -9,10 +9,10 @@ pipeline{
             }
         }
         stage("Build"){
-            step{
+            steps{
                 echo "Build"
                 echo "*****************************"
-                echo "Build Completed"
+                echo "Build Completed."
             }
         }
     }
