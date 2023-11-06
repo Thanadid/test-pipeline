@@ -5,6 +5,7 @@ pipeline{
             steps{
                 echo "Init"
                 echo "*****************************"
+                sh "ls -la"
                 echo "Init Completed."
             }
         }
@@ -12,6 +13,7 @@ pipeline{
             steps{
                 echo "Build"
                 echo "*****************************"
+                sh "docker ps -a"
                 echo "Build Completed."
             }
         }
