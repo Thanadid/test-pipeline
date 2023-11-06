@@ -1,5 +1,9 @@
 pipeline{
     agent any
+    environment {
+        IMGAE = "ll3lue/test"
+        TAG = "test-build"
+    }
     stages{
         stage("Init"){
             steps{
@@ -13,7 +17,7 @@ pipeline{
             steps{
                 echo "Build"
                 echo "*****************************"
-                sh "docker ps -a"
+                sh "docker build --no-cache -t ${env.IMGAE}:${env.TAG}"
                 echo "Build Completed."
             }
         }
