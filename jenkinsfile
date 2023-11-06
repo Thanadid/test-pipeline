@@ -17,7 +17,7 @@ pipeline{
             steps{
                 echo "Build"
                 echo "*****************************"
-                sh "docker build --no-cache -t ${env.IMGAE}:${env.TAG}"
+                sh "docker build --no-cache -t ${env.IMGAE}:${env.TAG} ."
                 echo "Build Completed."
             }
         }
